@@ -1,4 +1,4 @@
-package com.guimaraes.resource;
+package com.guimaraes;
 
 
 import org.springframework.boot.SpringApplication;
