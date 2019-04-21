@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.guimaraes.resource.ConstantVersion;
-import com.guimaraes.resource.payment.model.PaymentDTO;
 
 @RestController
 @RequestMapping("/" + ConstantVersion.VERSION + "/payment")
 public class PaymentController {
 
 	@PostMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public ResponseEntity<String> createNewPayment(@RequestBody PaymentDTO paymentRequest) {
+	public ResponseEntity<String> createNewPayment(@RequestBody String paymentRequest) {
 		return new ResponseEntity<>("", HttpStatus.CREATED);
 	}
 
